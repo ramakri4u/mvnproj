@@ -29,7 +29,14 @@
             <email>arun.gupta@gmail.com</email>
         </developer>
     </developers>
+	
     <distributionManagement>
+	<repository>
+            <id>github</id>
+            <name>Internal Releases</name>
+            <url> </url>
+        </repository>
+<!--
         <repository>
             <id>nexus</id>
             <name>Internal Releases</name>
@@ -40,7 +47,9 @@
             <name>Internal Snapshot Releases</name>
             <url>http://35.188.195.20:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
+ -->
     </distributionManagement>
+   
     <build>
     	<finalName>myproj</finalName>
         <pluginManagement>
