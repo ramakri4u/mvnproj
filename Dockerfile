@@ -5,3 +5,4 @@ WORKDIR /usr/local/tomcat/webapps
 USER  root
 EXPOSE 8080
 CMD ['catalina.sh','run']
+#/home/runner/work/mvnproj/mvnproj/target/myproj.war
