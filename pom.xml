@@ -34,7 +34,7 @@
 	<repository>
             <id>github</id>
             <name>Internal Releases</name>
-            <url> </url>
+            <url>https://github.com/ramakri4u/mvnproj.git/</url>
         </repository>
 <!--
         <repository>
