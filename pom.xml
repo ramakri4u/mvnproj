@@ -34,7 +34,7 @@
 	<repository>
             <id>github</id>
             <name>Internal Releases</name>
-            <url>https://github.com/ramakri4u/mvnproj/</url>
+            <url>https://maven.pkg.github.com/ramakri4u/mvnproj</url>
         </repository>
 <!--
         <repository>
