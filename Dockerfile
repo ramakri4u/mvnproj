@@ -1,4 +1,5 @@
 FROM tomcat:8.0
+USER root
 RUN cd /usr/local/tomcat/webapps/
 # RUN sudo apt-get install wget -y 
 # RUN sudo apt-get install unzip -y
