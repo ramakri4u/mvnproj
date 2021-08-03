@@ -60,6 +60,8 @@ jobs:
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/myproj:latest
           file: ./Dockerfile
           
+          
+          
       
 
 
