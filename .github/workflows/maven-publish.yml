@@ -38,7 +38,12 @@ jobs:
         with:
           name: github-actions-artifact
           path: staging
-        run: cp staging/ $GITHUB_REPOSITORY/
+          
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v2
+        with:
+          name: github-actions-artifact
+          path: $GITHUB_REPOSITORY/
           
       
           
