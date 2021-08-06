@@ -24,7 +24,7 @@ jobs:
       - name: Build with Maven
         run: |
           mvn -B package --file pom.xml
-          cp target/*.war ${{ GITHUB_REPOSITORY }}
+          scp target/*.war ${{ GITHUB_REPOSITORY }}
       
       - name: set up a cache for maven
         uses: actions/cache@v2
