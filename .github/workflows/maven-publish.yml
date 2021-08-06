@@ -39,14 +39,10 @@ jobs:
           name: github-actions-artifact
           path: staging
           
-      - name: Archive code coverage results
-        uses: actions/upload-artifact@v2
-        with:
-          name: github-actions-artifact
-          path: $GITHUB_REPOSITORY/taget
-          
-      - name: copy artifact
-        run: cp -r staging/ $GITHUB_REPOSITORY/target
+      - name: Publish package
+        run: mvn --batch-mode deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
       
           
