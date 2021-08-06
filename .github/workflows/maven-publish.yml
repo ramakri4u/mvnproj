@@ -38,6 +38,12 @@ jobs:
         with:
           name: github-actions-artifact
           path: staging
+      
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v2
+        with:
+          name: pos-artifact
+          path: mvnproj/
           
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
