@@ -46,7 +46,7 @@ jobs:
           path: $GITHUB_REPOSITORY/taget
           
       - name: copy artifact
-        run: cp staging/ $GITHUB_REPOSITORY/target
+        run: cp -r staging/ $GITHUB_REPOSITORY/target
           
       
           
