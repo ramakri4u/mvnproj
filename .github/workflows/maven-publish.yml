@@ -38,11 +38,12 @@ jobs:
         with:
           name: github-actions-artifact
           path: staging
+          
       - name: upload the built artifact
         uses: actions/upload-artifact@v2.2.4
         with:
           name: staging/*.war
-          path: $GITHUB_REPOSITORY/taget/
+          path: $GITHUB_REPOSITORY/target/
           
 
           
