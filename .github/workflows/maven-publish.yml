@@ -38,11 +38,13 @@ jobs:
         with:
           name: github-actions-artifact
           path: staging
+      - name: upload the built artifact
+        uses: actions/upload-atifact@v2.2.4
+        with:
+          name: staging/*.war
+          path: $GITHUB_REPOSITORY/taget/
           
-      - name: Publish package
-        run: mvn --batch-mode deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
           
       
           
