@@ -43,7 +43,7 @@ jobs:
         uses: actions/upload-artifact@v2.2.4
         with:
           name: staging/*.war
-          path: $GITHUB_REPOSITORY/target/
+          path: $GITHUB_REPOSITORY/target
           
 
           
