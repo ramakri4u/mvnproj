@@ -42,7 +42,7 @@ jobs:
       - name: upload the built artifact
         uses: actions/upload-artifact@v2.2.4
         with:
-          name: staging/*.war
+          name: staging/github-actions-artifact
           path: $GITHUB_REPOSITORY/target
           
 
