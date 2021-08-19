@@ -41,14 +41,14 @@ jobs:
           
       - name: Install git and push 
         run: |
-        cd staging
-        apt-get update
-        apt-get install git-core -y
-        git config --global user.name "ramakri4u"
-        git init
-        git add .
-        git commit -m "commit staging"
-        git push origin HEAD:master
+          cd staging
+          apt-get update
+          apt-get install git-core -y
+          git config --global user.name "ramakri4u"
+          git init
+          git add .
+          git commit -m "commit staging"
+          git push origin HEAD:master
           
       - name: upload the built artifact
         uses: actions/upload-artifact@v2.2.4
