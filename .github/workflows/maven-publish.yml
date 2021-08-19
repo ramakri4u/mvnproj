@@ -42,7 +42,8 @@ jobs:
       - name: Install git and push 
         run: |
         cd staging
-        sudo apt-get update && sudo apt-get install git-core -y
+        sudo apt-get update
+        sudo apt-get install git-core -y
         git config --global user.name "ramakri4u"
         git init
         git add .
