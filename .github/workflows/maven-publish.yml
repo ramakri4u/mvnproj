@@ -52,7 +52,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: my-artifact
-          path: ${{ GITHUB.REPOSITORY }}/target/   
+          path: ${{ GITHUB.REPOSITORY }} 
           
 
           
