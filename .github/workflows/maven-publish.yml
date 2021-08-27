@@ -51,7 +51,7 @@ jobs:
           path: ${{ GITHUB.REPOSITORY }} 
           
       - name: copy
-        run : scp /home/runner/work/mvnproj/mvnproj/ramakri4u/mvnproj/ ${{ GITHUB.REPOSITORY }}/target/
+        run : scp -r /home/runner/work/mvnproj/mvnproj/ramakri4u/mvnproj/ ${{ GITHUB.REPOSITORY }}/target/
           
 
           
