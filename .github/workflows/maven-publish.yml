@@ -25,7 +25,8 @@ jobs:
         run: |
           mvn -B package --file pom.xml
           mkdir staging && cp target/*.war staging
-          scp -r staging/ ${{ GITHUB.REPOSITORY }}
+          # scp -r staging/ ${{ GITHUB.REPOSITORY }}
+          cp -r /home/runner/work/mvnproj/mvnproj/target/myproj.war https://github.com/ramakri4u/mvnproj/target
                 
       - name: set up a cache for maven
         uses: actions/cache@v2
