@@ -38,16 +38,12 @@ jobs:
         with:
           name: my-artifact
           path: staging
-          
-      - name: move artifacts to github workspace
-        uses: actions/upload-artifact@v2
-        with:
-          name: my-artifact
-          path: ${{ GITHUB.WORKSPACE }}
-          
+                  
       - name: find github repository / workspace
-        run: echo ${{ GITHUB.REPOSITORY }}
-        
+        run: |
+          echo ${{ GITHUB.REPOSITORY }}
+          echo ${{ GITHUB.WORKSPACE }}
+                  
       - name: download the artifact
         uses: actions/download-artifact@v2
         with:
