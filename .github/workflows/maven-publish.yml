@@ -45,6 +45,9 @@ jobs:
           name: my-artifact
           path: ${{ GITHUB.WORKSPACE }}
           
+      - name: find github repository / workspace
+        run: echo ${{ GITHUB.WORKSPACE }}
+          
 
           
       
