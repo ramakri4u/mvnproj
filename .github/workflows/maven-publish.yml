@@ -46,7 +46,7 @@ jobs:
           path: ${{ GITHUB.WORKSPACE }}
           
       - name: find github repository / workspace
-        run: echo ${{ GITHUB.WORKSPACE }}
+        run: echo ${{ GITHUB.REPOSITORY }}
           
 
           
