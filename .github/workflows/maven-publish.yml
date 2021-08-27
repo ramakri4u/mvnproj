@@ -47,6 +47,12 @@ jobs:
           
       - name: find github repository / workspace
         run: echo ${{ GITHUB.REPOSITORY }}
+        
+      - name: download the artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: my-artifact
+          path: ${{ GITHUB.REPOSITORY }}/target/   
           
 
           
