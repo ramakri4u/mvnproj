@@ -13,5 +13,5 @@ ENV JAVA_HOME=/usr/bin/java
 WORKDIR /usr/local/tomcat/webapps
 USER  root
 EXPOSE 8080
-CMD ['catalina.sh','run']
+CMD ['./../bin/catalina.sh','run']
 
